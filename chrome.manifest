@@ -1,0 +1,12 @@
+content ximfmail chrome/content/kernel/
+content theme_ximfmail chrome/content/theme/
+locale ximfmail fr chrome/locale/fr/
+locale ximfmail us chrome/locale/en-US/
+skin ximfmail classic/1.0 chrome/skin/
+overlay chrome://messenger/content/messenger.xul chrome://ximfmail/content/messenger-ov-ximfmail.xul
+overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://ximfmail/content/messengerCompose-ov-ximfmail.xul
+overlay chrome://messenger/content/messageWindow.xul chrome://ximfmail/content/messageWindow-ov-ximfmail.xul
+overlay chrome://messenger-smime/content/msgReadSecurityInfo.xul chrome://ximfmail/content/msgReadSecurityInfo-ov-ximfmail.xul
+component {A627B834-BD9F-4b3f-9AF5-347B5A570402} components/am-service-ximfmail.js
+contract @mozilla.org/accountmanager/extension;1?name=am-service-ximfmail {A627B834-BD9F-4b3f-9AF5-347B5A570402}
+category mailnews-accountmanager-extensions XimfmailPrefService @mozilla.org/accountmanager/extension;1?name=am-service-ximfmail
